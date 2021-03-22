@@ -1,17 +1,22 @@
-#nav li {
+nav li {
   display: inline-block;
-
+  padding: 20px;
+  margin-right: 70px;
+  
+  
 }
 
-header {
-  background-color: burlywood;
+header, h2 {
+  text-align: center;
 }
 
 nav {
-  background-color: cyan;
-  display: inline-block;
-  margin-right: 30px;
-  justify-content: right;
-  text-decoration: none;
   width: 100%;
+  text-align: right;
 }
+
+a {
+  text-decoration: none;
+}
+
+
