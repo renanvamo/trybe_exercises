@@ -1,0 +1,17 @@
+#nav li {
+  display: inline-block;
+
+}
+
+header {
+  background-color: burlywood;
+}
+
+nav {
+  background-color: cyan;
+  display: inline-block;
+  margin-right: 30px;
+  justify-content: right;
+  text-decoration: none;
+  width: 100%;
+}
