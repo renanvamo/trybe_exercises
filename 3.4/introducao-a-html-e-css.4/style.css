@@ -1,5 +1,5 @@
 body {
-  margin: 100px;
+  width: 90%;  
 }
 
 .nav-index li {
@@ -19,16 +19,12 @@ img {
 }
 
 .images {
-  width: 80%;
-}
-
-img {
-  display: inline-block;
+  width: 100%;
 }
 
 .nav-index{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .nav-index a {
@@ -47,8 +43,6 @@ img {
   text-align: center;  
 }
 
-}
-
 span {
   font-style: italic;
 }
@@ -64,10 +58,16 @@ span {
 
 }
 
-#content {
-  display: inline-block;
-}
-
 #text-content {
   width: 80%;
+}
+
+#content {
+  margin-left: 60px;
+}
+
+footer {
+  margin-top: 100px;
+  text-align: end;
+  font-size: 15px;
 }
