@@ -1,21 +1,17 @@
-let examScore = Math.random()*101;
-console.log(examScore)
-/* Exercicio 7 */
-if (examScore > 100 || examScore < 0) {
-  console.log('A nota do aluno deve ser entre 0 e 100')
-} else if (examScore >= 90) {
-  console.log(`A nota final do aluno é A`);
-} else if (examScore >= 80) {
-  console.log(`A nota final do aluno é B`);
-} else if (examScore >= 70) {
-  console.log(`A nota final do aluno é C`);
-} else if (examScore >= 60) {
-  console.log(`A nota final do aluno é D`);
-} else if (examScore >= 50) {
-  console.log(`A nota final do aluno é E`);
-} else if (examScore >= 0) {
-  console.log(`A nota final do aluno é F`);
+let num1 = 1;
+let num2 = 3;
+let num3 = 5;
+
+
+/* Exercicio 8 */
+
+if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
+  console.log('true');
+} else {
+  console.log('false');
 }
+
+
 
 
 /* Exercício 1
@@ -85,4 +81,21 @@ if (chessPiece.toLowerCase() === 'king') {
   console.log(`${chessPiece} <-  vertically forward one square, with the option to move two squares if they have not yet moved.`);
 } else {
   console.log(`${chessPiece} isn't a known piece of chess... yet`); 
+}*/
+
+/* Exercicio 7 
+if (examScore > 100 || examScore < 0) {
+  console.log('A nota do aluno deve ser entre 0 e 100')
+} else if (examScore >= 90) {
+  console.log(`A nota final do aluno é A`);
+} else if (examScore >= 80) {
+  console.log(`A nota final do aluno é B`);
+} else if (examScore >= 70) {
+  console.log(`A nota final do aluno é C`);
+} else if (examScore >= 60) {
+  console.log(`A nota final do aluno é D`);
+} else if (examScore >= 50) {
+  console.log(`A nota final do aluno é E`);
+} else if (examScore >= 0) {
+  console.log(`A nota final do aluno é F`);
 }*/
