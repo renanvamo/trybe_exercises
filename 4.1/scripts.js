@@ -1,13 +1,18 @@
-let numA = 3;
+let angleA = 30;
+let angleB = 60;
+let angleC = 90;
 
-/* Exercicio 4 */
-if (numA > 0) {
-  console.log('Positive');
-} else if (numA < 0) {
-  console.log('Negative');
+/* Exercicio 5 */
+if (typeof(angleA) === 'number' && typeof(angleB) === 'number' && typeof(angleC) === 'number') { 
+  if (angleA + angleB + angleC === 180) {
+    console.log('Os 3 ângulos formam um triângulo');
+  } else {
+    console.log('Os 3 ângulos não formam um triângulo');
+  }     
 } else {
-  console.log('0')
+  console.log('Um dos valores não é um número, coloque outro valor');
 }
+
 
 /* Exercício 1
 console.log(`A soma de ${numA} + ${numB} é igual a ${numA + numB}`);
@@ -38,5 +43,12 @@ if (numA > numB && numA > numC) {
   console.log('Não há um valor maior que os outros dois ao mesmo tempo');
 }*/
 
-
+/* Exercicio 4 
+if (numA > 0) {
+  console.log('Positive');
+} else if (numA < 0) {
+  console.log('Negative');
+} else {
+  console.log('0');
+}*/
 
