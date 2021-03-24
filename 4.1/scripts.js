@@ -1,10 +1,12 @@
-let angleA = 30;
+let angleA = -30;
 let angleB = 60;
 let angleC = 90;
 
 /* Exercicio 5 */
-if (typeof(angleA) === 'number' && typeof(angleB) === 'number' && typeof(angleC) === 'number') { 
-  if (angleA + angleB + angleC === 180) {
+if (typeof(angleA) === 'number' && typeof(angleB) === 'number' && typeof(angleC) === 'number') {
+  if (angleA < 0 || angleB < 0 || angleC < 0) { 
+    console.log('Favor inserir apenas valores positivos para os ângulos')
+  } else if (angleA + angleB + angleC === 180) {
     console.log('Os 3 ângulos formam um triângulo');
   } else {
     console.log('Os 3 ângulos não formam um triângulo');
