@@ -2,7 +2,7 @@ let num1 = 0;
 let num2 = 2;
 let num3 = 4;
 
-/* Exercicio 8 */
+/* Exercicio 9 */
 
 if (num1 % 2 === 1 || num2 % 2 === 1 || num3 % 2 === 1) {
   console.log('true')
