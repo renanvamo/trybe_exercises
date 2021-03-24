@@ -1,18 +1,21 @@
-let angleA = -30;
-let angleB = 60;
-let angleC = 90;
+let chessPiece = 'pawn';
 
-/* Exercicio 5 */
-if (typeof(angleA) === 'number' && typeof(angleB) === 'number' && typeof(angleC) === 'number') {
-  if (angleA < 0 || angleB < 0 || angleC < 0) { 
-    console.log('Favor inserir apenas valores positivos para os ângulos')
-  } else if (angleA + angleB + angleC === 180) {
-    console.log('Os 3 ângulos formam um triângulo');
-  } else {
-    console.log('Os 3 ângulos não formam um triângulo');
-  }     
+/* Exercicio 6 */
+
+if (chessPiece.toLowerCase() === 'king') {
+  console.log(`${chessPiece} <- One square in any direction`);
+} else if (chessPiece.toLowerCase() === 'bishop') {
+  console.log(`${chessPiece} <- diagonally any number of squares`);
+} else if (chessPiece.toLowerCase() === 'queen') {
+  console.log(`${chessPiece} <- diagonally, horizontally, or vertically any number of squares`);
+} else if (chessPiece.toLowerCase() === 'rook') {
+  console.log(`${chessPiece} <- horizontally or vertically any number of squares`);
+} else if (chessPiece.toLowerCase() === 'knight') {
+  console.log(`${chessPiece} <- in an ‘L’ shape’: two squares in a horizontal or vertical direction, then move one square horizontally or vertically.`);
+} else if (chessPiece.toLowerCase() === 'pawn') {
+  console.log(`${chessPiece} <-  vertically forward one square, with the option to move two squares if they have not yet moved.`);
 } else {
-  console.log('Um dos valores não é um número, coloque outro valor');
+  console.log(`${chessPiece} isn't a known piece of chess... yet`); 
 }
 
 
@@ -54,3 +57,15 @@ if (numA > 0) {
   console.log('0');
 }*/
 
+/* Exercicio 5
+if (typeof(angleA) === 'number' && typeof(angleB) === 'number' && typeof(angleC) === 'number') {
+  if (angleA < 0 || angleB < 0 || angleC < 0) { 
+    console.log('Favor inserir apenas valores positivos para os ângulos')
+  } else if (angleA + angleB + angleC === 180) {
+    console.log('Os 3 ângulos formam um triângulo');
+  } else {
+    console.log('Os 3 ângulos não formam um triângulo');
+  }     
+} else {
+  console.log('Um dos valores não é um número, coloque outro valor');
+}*/
