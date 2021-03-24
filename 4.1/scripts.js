@@ -1,21 +1,20 @@
-let chessPiece = 'pawn';
-
-/* Exercicio 6 */
-
-if (chessPiece.toLowerCase() === 'king') {
-  console.log(`${chessPiece} <- One square in any direction`);
-} else if (chessPiece.toLowerCase() === 'bishop') {
-  console.log(`${chessPiece} <- diagonally any number of squares`);
-} else if (chessPiece.toLowerCase() === 'queen') {
-  console.log(`${chessPiece} <- diagonally, horizontally, or vertically any number of squares`);
-} else if (chessPiece.toLowerCase() === 'rook') {
-  console.log(`${chessPiece} <- horizontally or vertically any number of squares`);
-} else if (chessPiece.toLowerCase() === 'knight') {
-  console.log(`${chessPiece} <- in an ‘L’ shape’: two squares in a horizontal or vertical direction, then move one square horizontally or vertically.`);
-} else if (chessPiece.toLowerCase() === 'pawn') {
-  console.log(`${chessPiece} <-  vertically forward one square, with the option to move two squares if they have not yet moved.`);
-} else {
-  console.log(`${chessPiece} isn't a known piece of chess... yet`); 
+let examScore = Math.random()*101;
+console.log(examScore)
+/* Exercicio 7 */
+if (examScore > 100 || examScore < 0) {
+  console.log('A nota do aluno deve ser entre 0 e 100')
+} else if (examScore >= 90) {
+  console.log(`A nota final do aluno é A`);
+} else if (examScore >= 80) {
+  console.log(`A nota final do aluno é B`);
+} else if (examScore >= 70) {
+  console.log(`A nota final do aluno é C`);
+} else if (examScore >= 60) {
+  console.log(`A nota final do aluno é D`);
+} else if (examScore >= 50) {
+  console.log(`A nota final do aluno é E`);
+} else if (examScore >= 0) {
+  console.log(`A nota final do aluno é F`);
 }
 
 
@@ -68,4 +67,22 @@ if (typeof(angleA) === 'number' && typeof(angleB) === 'number' && typeof(angleC)
   }     
 } else {
   console.log('Um dos valores não é um número, coloque outro valor');
+}*/
+
+/* Exercicio 6 
+
+if (chessPiece.toLowerCase() === 'king') {
+  console.log(`${chessPiece} <- One square in any direction`);
+} else if (chessPiece.toLowerCase() === 'bishop') {
+  console.log(`${chessPiece} <- diagonally any number of squares`);
+} else if (chessPiece.toLowerCase() === 'queen') {
+  console.log(`${chessPiece} <- diagonally, horizontally, or vertically any number of squares`);
+} else if (chessPiece.toLowerCase() === 'rook') {
+  console.log(`${chessPiece} <- horizontally or vertically any number of squares`);
+} else if (chessPiece.toLowerCase() === 'knight') {
+  console.log(`${chessPiece} <- in an ‘L’ shape’: two squares in a horizontal or vertical direction, then move one square horizontally or vertically.`);
+} else if (chessPiece.toLowerCase() === 'pawn') {
+  console.log(`${chessPiece} <-  vertically forward one square, with the option to move two squares if they have not yet moved.`);
+} else {
+  console.log(`${chessPiece} isn't a known piece of chess... yet`); 
 }*/
