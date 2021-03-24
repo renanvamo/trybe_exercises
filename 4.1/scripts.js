@@ -1,6 +1,13 @@
-let numA = 10;
-let numB = 9;
-let numC = 6;
+let numA = 3;
+
+/* Exercicio 4 */
+if (numA > 0) {
+  console.log('Positive');
+} else if (numA < 0) {
+  console.log('Negative');
+} else {
+  console.log('0')
+}
 
 /* Exercício 1
 console.log(`A soma de ${numA} + ${numB} é igual a ${numA + numB}`);
@@ -20,7 +27,7 @@ if (numA > numB) {
 } 
 */
 
-/* Exercicio 3*/
+/* Exercicio 3
 if (numA > numB && numA > numC) {
   console.log(`${numA} é maior que ${numB} e ${numC}`);
 } else if (numB > numA && numB > numC) {
@@ -29,7 +36,7 @@ if (numA > numB && numA > numC) {
   console.log(`${numC} é maior que ${numA} e ${numB}`);
 } else {
   console.log('Não há um valor maior que os outros dois ao mesmo tempo');
-}
+}*/
 
 
 
