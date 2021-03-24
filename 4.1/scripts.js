@@ -1,15 +1,15 @@
-let num1 = 1;
-let num2 = 3;
-let num3 = 5;
-
+let num1 = 0;
+let num2 = 2;
+let num3 = 4;
 
 /* Exercicio 8 */
 
-if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
-  console.log('true');
+if (num1 % 2 === 1 || num2 % 2 === 1 || num3 % 2 === 1) {
+  console.log('true')
 } else {
-  console.log('false');
+  console.log('false')
 }
+
 
 
 
@@ -66,7 +66,6 @@ if (typeof(angleA) === 'number' && typeof(angleB) === 'number' && typeof(angleC)
 }*/
 
 /* Exercicio 6 
-
 if (chessPiece.toLowerCase() === 'king') {
   console.log(`${chessPiece} <- One square in any direction`);
 } else if (chessPiece.toLowerCase() === 'bishop') {
@@ -99,3 +98,10 @@ if (examScore > 100 || examScore < 0) {
 } else if (examScore >= 0) {
   console.log(`A nota final do aluno é F`);
 }*/
+
+/* Exercicio 8
+if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
+  console.log('true');
+} else {
+  console.log('false');
+} */
