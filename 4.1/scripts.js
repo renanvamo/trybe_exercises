@@ -1,35 +1,8 @@
-/* Exercicio 11 */
-let salary = 6570.88;
-let inss;
-let ir = 0;
 
-if (salary <= 1556.94) {
-  inss = salary * 8 / 100;
-} else if (salary <= 2594.92 && salary > 1556.94) {
-  inss = salary * 9 / 100;
-} else if (salary <= 5189.82 && salary > 2594.92) {
-  inss = salary * 11 / 100;
-} else if (salary > 5189.82) {
-  inss = 570.88; 
-}
-salary -= inss;
-
-if (salary > 4664.68) {
-  ir = 27.5 / 100 * salary - 869.36;  
-} else if (salary >= 3751.06 && salary <= 4664.68) {
-  ir = 22.5 / 100 * salary - 636.13; 
-} else if (salary >= 2826.66 && salary < 3751.06) {
-  ir = 15 / 100 * salary - 354.80;
-} else if (salary >= 1903.99 && salary < 2826.66) {
-  ir = 7.5 / 100 * salary - 142.80;
-} 
-salary -= ir;
-
-console.log(salary.toFixed(2))
-console.log(inss.toFixed(2))
-console.log(ir.toFixed(2))
 
 /* Exercício 1
+let numA = 4;
+let numB = 6;
 console.log(`A soma de ${numA} + ${numB} é igual a ${numA + numB}`);
 console.log(`A subtração de ${numA} - ${numB} é igual a ${numA - numB}`);
 console.log(`A multiplicação de ${numA} * ${numB} é igual a ${numA * numB}`);
@@ -38,6 +11,8 @@ console.log(`O módulo de ${numA} % ${numB} é igual a ${numA % numB}`);
 */
 
 /* Exercício 2
+let numA = 4;
+let numB = 6;
 if (numA > numB) {
   console.log(`${numA} é maior que ${numB}`);
 } else if (numB > numA) {
@@ -48,6 +23,9 @@ if (numA > numB) {
 */
 
 /* Exercicio 3
+let numA = 4;
+let numB = 6;
+let nunC = 8;
 if (numA > numB && numA > numC) {
   console.log(`${numA} é maior que ${numB} e ${numC}`);
 } else if (numB > numA && numB > numC) {
@@ -59,6 +37,7 @@ if (numA > numB && numA > numC) {
 }*/
 
 /* Exercicio 4 
+let numA = 12;
 if (numA > 0) {
   console.log('Positive');
 } else if (numA < 0) {
@@ -68,6 +47,9 @@ if (numA > 0) {
 }*/
 
 /* Exercicio 5
+let angleA = 30;
+let angleC = 70;
+let angleC = 80;
 if (typeof(angleA) === 'number' && typeof(angleB) === 'number' && typeof(angleC) === 'number') {
   if (angleA < 0 || angleB < 0 || angleC < 0) { 
     console.log('Favor inserir apenas valores positivos para os ângulos')
@@ -81,6 +63,7 @@ if (typeof(angleA) === 'number' && typeof(angleB) === 'number' && typeof(angleC)
 }*/
 
 /* Exercicio 6 
+let chessPiece = 'king';
 if (chessPiece.toLowerCase() === 'king') {
   console.log(`${chessPiece} <- One square in any direction`);
 } else if (chessPiece.toLowerCase() === 'bishop') {
@@ -98,6 +81,7 @@ if (chessPiece.toLowerCase() === 'king') {
 }*/
 
 /* Exercicio 7 
+let examScore = 88;
 if (examScore > 100 || examScore < 0) {
   console.log('A nota do aluno deve ser entre 0 e 100')
 } else if (examScore >= 90) {
@@ -115,6 +99,9 @@ if (examScore > 100 || examScore < 0) {
 }*/
 
 /* Exercicio 8
+let num1 = 2;
+let num3 = 4;
+let num5 = 5;
 if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
   console.log('true');
 } else {
@@ -122,6 +109,9 @@ if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
 } */
 
 /* Exercicio 9 
+let num1 = 2;
+let num3 = 4;
+let num5 = 5;
 if (num1 % 2 === 1 || num2 % 2 === 1 || num3 % 2 === 1) {
   console.log('true')
 } else {
@@ -136,3 +126,38 @@ if (costPrice < 0 || sellPrice < 0) {
 }
   console.log(`O lucro ao vender 1000 produtos é de ${(sellPrice * 1000) - ((costPrice + 20 / 100 * 10) * 1000)}`);
   */
+
+  /* Exercicio 11 
+let salary = 6570.88;
+let inss;
+let ir = 0;
+
+//Calculo do INSS
+if (salary <= 1556.94) {
+  inss = salary * 8 / 100;
+} else if (salary <= 2594.92 && salary > 1556.94) {
+  inss = salary * 9 / 100;
+} else if (salary <= 5189.82 && salary > 2594.92) {
+  inss = salary * 11 / 100;
+} else if (salary > 5189.82) {
+  inss = 570.88; 
+}
+salary -= inss;
+
+//calculo do IR
+if (salary > 4664.68) {
+  ir = 27.5 / 100 * salary - 869.36;  
+} else if (salary >= 3751.06 && salary <= 4664.68) {
+  ir = 22.5 / 100 * salary - 636.13; 
+} else if (salary >= 2826.66 && salary < 3751.06) {
+  ir = 15 / 100 * salary - 354.80;
+} else if (salary >= 1903.99 && salary < 2826.66) {
+  ir = 7.5 / 100 * salary - 142.80;
+} 
+salary -= ir;
+
+//Mostra o salario com os descontos
+console.log(salary.toFixed(2))
+console.log(inss.toFixed(2))
+console.log(ir.toFixed(2))
+*/
