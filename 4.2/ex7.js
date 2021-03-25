@@ -5,4 +5,4 @@ for (let number of numbers) {
     smallestNumber = number;
   }
 } 
-console.log(smallestNumber);
+console.log(smallestNumber );
