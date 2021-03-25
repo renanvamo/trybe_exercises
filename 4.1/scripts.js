@@ -106,7 +106,7 @@ if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
   console.log('true');
 } else {
   console.log('false');
-} */
+}*/
 
 /* Exercicio 9 
 let num1 = 2;
@@ -125,9 +125,9 @@ if (costPrice < 0 || sellPrice < 0) {
   console.log('Ambos os valores devem ser maiores do que 0');
 }
   console.log(`O lucro ao vender 1000 produtos é de ${(sellPrice * 1000) - ((costPrice + 20 / 100 * 10) * 1000)}`);
-  */
+*/
 
-  /* Exercicio 11 
+/* Exercicio 11 
 let salary = 6570.88;
 let inss;
 let ir = 0;
