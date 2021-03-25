@@ -113,9 +113,9 @@ let num1 = 2;
 let num3 = 4;
 let num5 = 5;
 if (num1 % 2 === 1 || num2 % 2 === 1 || num3 % 2 === 1) {
-  console.log('true')
+  console.log('true');
 } else {
-  console.log('false')
+  console.log('false');
 }*/
 
 /* Exercicio 10 
