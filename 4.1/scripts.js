@@ -1,18 +1,12 @@
-let num1 = 0;
-let num2 = 2;
-let num3 = 4;
+let costPrice = 50;
+let sellPrice = 1000;
 
-/* Exercicio 9 */
 
-if (num1 % 2 === 1 || num2 % 2 === 1 || num3 % 2 === 1) {
-  console.log('true')
-} else {
-  console.log('false')
+/* Exercicio 10 */
+if (costPrice < 0 || sellPrice < 0) {
+  console.log('Ambos os valores devem ser maiores do que 0');
 }
-
-
-
-
+  console.log(`O lucro ao vender 1000 produtos é de ${(sellPrice * 1000) - ((costPrice + 20 / 100 * 10) * 1000)}`)
 
 /* Exercício 1
 console.log(`A soma de ${numA} + ${numB} é igual a ${numA + numB}`);
@@ -105,3 +99,10 @@ if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
 } else {
   console.log('false');
 } */
+
+/* Exercicio 9 
+if (num1 % 2 === 1 || num2 % 2 === 1 || num3 % 2 === 1) {
+  console.log('true')
+} else {
+  console.log('false')
+}*/
