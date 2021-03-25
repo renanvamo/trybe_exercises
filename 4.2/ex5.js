@@ -3,7 +3,7 @@ let greaterNumber = 0;
 
 for (let number of numbers) {
   if (number > greaterNumber) {
-    greaterNumber = number
+    greaterNumber = number;
   }
 }
 console.log(greaterNumber);
