@@ -1,12 +1,33 @@
-let costPrice = 50;
-let sellPrice = 1000;
+/* Exercicio 11 */
+let salary = 6570.88;
+let inss;
+let ir = 0;
 
-
-/* Exercicio 10 */
-if (costPrice < 0 || sellPrice < 0) {
-  console.log('Ambos os valores devem ser maiores do que 0');
+if (salary <= 1556.94) {
+  inss = salary * 8 / 100;
+} else if (salary <= 2594.92 && salary > 1556.94) {
+  inss = salary * 9 / 100;
+} else if (salary <= 5189.82 && salary > 2594.92) {
+  inss = salary * 11 / 100;
+} else if (salary > 5189.82) {
+  inss = 570.88; 
 }
-  console.log(`O lucro ao vender 1000 produtos é de ${(sellPrice * 1000) - ((costPrice + 20 / 100 * 10) * 1000)}`)
+salary -= inss;
+
+if (salary > 4664.68) {
+  ir = 27.5 / 100 * salary - 869.36;  
+} else if (salary >= 3751.06 && salary <= 4664.68) {
+  ir = 22.5 / 100 * salary - 636.13; 
+} else if (salary >= 2826.66 && salary < 3751.06) {
+  ir = 15 / 100 * salary - 354.80;
+} else if (salary >= 1903.99 && salary < 2826.66) {
+  ir = 7.5 / 100 * salary - 142.80;
+} 
+salary -= ir;
+
+console.log(salary.toFixed(2))
+console.log(inss.toFixed(2))
+console.log(ir.toFixed(2))
 
 /* Exercício 1
 console.log(`A soma de ${numA} + ${numB} é igual a ${numA + numB}`);
@@ -106,3 +127,12 @@ if (num1 % 2 === 1 || num2 % 2 === 1 || num3 % 2 === 1) {
 } else {
   console.log('false')
 }*/
+
+/* Exercicio 10 
+let costPrice = 50;
+let sellPrice = 1000;
+if (costPrice < 0 || sellPrice < 0) {
+  console.log('Ambos os valores devem ser maiores do que 0');
+}
+  console.log(`O lucro ao vender 1000 produtos é de ${(sellPrice * 1000) - ((costPrice + 20 / 100 * 10) * 1000)}`);
+  */
