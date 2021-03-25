@@ -3,7 +3,7 @@ let totalOddNumbers = 0
 
 for (let number of numbers) {
   if (number % 2 === 1) {
-    totalOddNumbers += 1
+    totalOddNumbers += 1;
   }
 }
 console.log(totalOddNumbers);
