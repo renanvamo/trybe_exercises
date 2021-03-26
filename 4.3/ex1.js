@@ -5,7 +5,7 @@ let n = Math.ceil(Math.random() * 5);
 console.log(`N = ${n}`);
 let array = []
 
-//Testa se o número é maior que 1 para poer rodar o programa 
+//Testa se o número é maior que 1 para poer rodar o programa, e somente números de 1 a 5
 if (n <= 1) {
   console.log('O valor de "n" deve ser maior que 1');
 } else { 
