@@ -18,10 +18,10 @@ for (let lineIndex = 1; lineIndex <= number; lineIndex += 1) {
       if (columnIndex <= counterUp && columnIndex >= counterDown) {
         inputLine += '*';
       } else {
-        inputLine += '.';
+        inputLine += ' ';
       }
     } else {
-      inputLine += '.';
+      inputLine += ' ';
     } 
   } 
   console.log(inputLine);
