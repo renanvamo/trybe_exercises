@@ -1,7 +1,9 @@
 //1- Para o primeiro exercício de hoje, faça um programa que, dado um valor n qualquer, seja n > 1 , imprima na tela um quadrado feito de asteriscos de lado de tamanho n . Por exemplo:
 
-//Cria um número random entre 1 e 5 e imprimi para o Dev saber qual é o valor ao rodar o código
-let n = Math.ceil(Math.random() * 5);
+
+
+//Cria um número random entre 1 e 15(aumentei para um efeito visual melhor) e imprimi para o Dev saber qual é o valor ao rodar o código
+let n = Math.ceil(Math.random() * 15);
 console.log(`N = ${n}`);
 let array = []
 

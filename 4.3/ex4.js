@@ -1,6 +1,6 @@
 //4 - Por fim, faça uma pirâmide com n asteriscos de base:
 
-let number = Math.ceil(Math.random() * 15)
+let number = Math.ceil(Math.random() * 15);
 console.log(`Number = ${number}`);
 let inputLine = '';
 let symbol = '*';
@@ -30,8 +30,7 @@ for (let lineIndex = 1; lineIndex <= number; lineIndex += 2) {
   console.log(inputLine);
   inputLine = '';
   counterUp += 1;
-  counterDown -= 1;
-  
+  counterDown -= 1; 
 }
 
       

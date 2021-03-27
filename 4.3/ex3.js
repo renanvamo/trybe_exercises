@@ -1,8 +1,8 @@
 //3 - Agora inverta o lado do triângulo. Por exemplo:
 
 //Cria um número random entre 1 e 5 e imprimi para o Dev saber qual é o valor ao rodar o código
-let number = Math.ceil(Math.random() * 5);
-console.log(`N = ${n}`);
+let number = Math.ceil(Math.random() * 15);
+console.log(`N = ${number}`);
 
 let inputLine = ''
 let symbol = '*'
@@ -14,11 +14,9 @@ for (let lineIndex = 0; lineIndex < number; lineIndex += 1) {
     if (columnIndex >= counter) {
       inputLine += symbol;
     } else {
-      inputLine += '.';
+      inputLine += ' ';
     }
   } 
   console.log(inputLine)
   inputLine = ''
- 
-  
 }
