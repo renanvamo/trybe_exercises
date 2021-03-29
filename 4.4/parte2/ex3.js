@@ -2,7 +2,7 @@
 
 myArray = [2, 4, 6, 7, 10, 0, -3];
 
-function verifySmallerNumber(array) {
+function indexOfSmallerNumber(array) {
   let smallerNumber = array[0];
     for (let index in array) {
       if (array[index] < smallerNumber) {
@@ -11,4 +11,4 @@ function verifySmallerNumber(array) {
   }
   return array.indexOf(smallerNumber);
 }
-console.log(verifySmallerNumber(myArray));
+console.log(indexOfSmallerNumber(myArray));
