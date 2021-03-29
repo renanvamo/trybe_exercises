@@ -19,3 +19,4 @@ function verifyPalindrome(word) {
 }
 
 console.log(verifyPalindrome('arara'));
+console.log(verifyPalindrome('Desenvolvimento'));
