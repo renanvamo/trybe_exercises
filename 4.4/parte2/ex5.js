@@ -2,16 +2,16 @@
 
 let myArray = [2, 3, 2, 5, 8, 2, 3]; 
 
-function verifyMostRepeatedValue() {
-  let mostRepeatedValue = myArray[0]; 
+function verifyMostRepeatedValue(array) {
+  let mostRepeatedValue = array[0]; 
   let numberAppearences = 0;
-    for (let index in myArray) {
+    for (let index in array) {
     let sameValue = 0; 
-    for (let secondIndex in myArray) { 
-      if (myArray[index] === myArray[secondIndex]) {
+    for (let secondIndex in array) { 
+      if (myArray[index] === array[secondIndex]) {
         sameValue += 1; 
         if (sameValue > numberAppearences) {
-          mostRepeatedValue = myArray[index];
+          mostRepeatedValue = array[index];
           numberAppearences = sameValue;
         }
       }

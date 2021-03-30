@@ -10,5 +10,6 @@ function indexOfSmallerNumber(array) {
     }
   }
   return array.indexOf(smallerNumber);
-}
+};
+
 console.log(indexOfSmallerNumber(myArray));

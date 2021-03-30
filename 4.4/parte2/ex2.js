@@ -10,5 +10,6 @@ function verifyHigherNumber(array) {
     }
   }
   return array.indexOf(higherNumber);
-}
+};
+
 console.log(verifyHigherNumber(myArray));

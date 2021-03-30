@@ -16,7 +16,7 @@ function verifyPalindrome(word) {
   } else {
   return false;
   }
-}
+};
 
 console.log(verifyPalindrome('arara'));
 console.log(verifyPalindrome('Desenvolvimento'));

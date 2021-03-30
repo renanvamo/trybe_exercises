@@ -5,15 +5,15 @@ let myArray = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 
 
 
-function verifyBiggerName() {
+function verifyBiggerName(array) {
   let countWord = 0;
-  let biggerName = myArray[0];
-  for (let index in myArray) {
+  let biggerName = array[0];
+  for (let index in array) {
     if (myArray[index].length > biggerName.length) {
-      biggerName = myArray[index];
+      biggerName = array[index];
     }
   }
   return biggerName
-}
+};
 
 console.log(verifyBiggerName(myArray));
