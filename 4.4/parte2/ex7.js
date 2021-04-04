@@ -10,8 +10,8 @@ Retorno esperado: false*/
 
 function verifyEndingWord(word, endingWord) {
   //substring - remove os primeiros caracteres de uma string, eu determino a quantidade entre ()
-  let newEndingWord = word.substring(word.length - endingWord.length); 
-  return (endingWord === newEndingWord)
+  word = word.substring(word.length - endingWord.length); 
+  return (endingWord === word);
 };
 
 console.log(verifyEndingWord('trybe', 'be')); //true
