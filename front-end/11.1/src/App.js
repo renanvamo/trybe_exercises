@@ -1,13 +1,21 @@
 import React from 'react';
 import './App.css';
-import Component from './Component'
 
-class ReactClass extends React.Component {
-  render() {
-    return (
-    <Component />
-    );
-  }
+
+const Task = (value) => {
+  return (
+    <li key={value}>{value}</li>
+  );
 }
 
-export default ReactClass
+const tarefas = ['Acordar', 'Tomar café', 'Escovar os dentes', 'Ir trabalhar'];
+
+class App extends React.Component {
+  render() {
+    return (
+      <ul>{ tarefas.map((tarefa) => Task(tarefa)) }</ul>
+    );
+  };   
+}
+
+export default App;
